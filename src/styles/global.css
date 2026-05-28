@@ -1,19 +1,5 @@
 :root {
   --font-base: "brandorodriguez";
-  --primary: 156, 58%, 53%;
-  --background: 0, 0%, 8%;
-  --foreground: 60 9.1% 97.8%;
-  --background-resume: 0, 0%, 11%;
-  --border: 0, 0%, 18%;
-  --card: 0 0% 9%;
-  --background-button: 157, 100%, 19%;
-  --border-resume: 0, 0%, 16%;
-  --border-button: 156, 75%, 29%;
-  --hover-button: 156, 49%, 30%;
-  --hover-border-button: 156, 58%, 53%;
-  --title: 0, 0%, 98%;
-  --paragraph: 0deg 0% 70.6%;
-  --link: 228, 93%, 78%;
 }
 
 @font-face {
