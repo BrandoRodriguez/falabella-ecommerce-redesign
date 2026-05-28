@@ -30,11 +30,38 @@ html {
 }
 
 body {
-  background: hsl(var(--background));
   font-family: var(--font-base), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   margin-block: 0;
   margin-inline: auto;
   inline-size: 100%;
   block-size: 100%;
-  max-width: 64rem;
+}
+
+.container {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+@media (min-width: 48rem) {
+  .container {
+    max-width: 48rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container {
+    max-width: 64rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
+@media (min-width: 96rem) {
+  .container {
+    max-width: 80rem;
+  }
 }
