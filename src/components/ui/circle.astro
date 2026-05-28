@@ -1,0 +1,70 @@
+---
+interface Props {
+  variant?: "dot" | "solid";
+}
+
+const { variant = "dot" } = Astro.props;
+---
+
+{
+  variant === "dot" && (
+    <span class="circle-dot">
+      <span class="circle-inner" />
+    </span>
+  )
+}
+{
+  variant === "solid" && (
+    <span class="circle-solid">
+      <span class="circle-inner" />
+    </span>
+  )
+}
+
+<style>
+  .circle-dot {
+    position: absolute;
+    inset-block-start: 3.5px;
+    inset-inline-start: -9px;
+    inline-size: 16px;
+    block-size: 16px;
+    background: #1f3c2f;
+    border-radius: 9999px;
+  }
+
+  .circle-solid {
+    position: absolute;
+    inset-inline-start: -9px;
+  }
+
+  .circle-inner {
+    position: absolute;
+    inset-block-start: 6px;
+    inset-inline-start: 6.3px;
+    inline-size: 4px;
+    block-size: 4px;
+    background: hsl(var(--primary));
+    border-radius: 9999px;
+  }
+
+  @media (min-width: 1024px) {
+    .circle-dot {
+      inset-block-start: 1px;
+      inset-inline-start: -10.5px;
+      inline-size: 20px;
+      block-size: 20px;
+    }
+
+    .circle-inner {
+      inset-block-start: 7.5px;
+      inset-inline-start: 7.5px;
+      inline-size: 5px;
+      block-size: 5px;
+    }
+
+    .circle-solid {
+      position: absolute;
+      inset-inline-start: -10.5px;
+    }
+  }
+</style>
